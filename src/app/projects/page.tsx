@@ -2,36 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiGithub } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
-
-const projects = [
-  {
-    title: "Project One",
-    description:
-      "This is a longer description for Project One. It details the project's purpose, the problems it solves, and the technologies used to build it. The goal is to give a comprehensive overview.",
-    image: "https://via.placeholder.com/800x600",
-    tags: ["Next.js", "TypeScript", "Node.js"],
-    codeUrl: "https://github.com",
-    liveUrl: "https://vercel.com",
-  },
-  {
-    title: "Project Two",
-    description:
-      "This is a detailed description for Project Two. It explains the features and functionality of the application, highlighting the technical challenges and how they were overcome.",
-    image: "https://via.placeholder.com/800x600",
-    tags: ["React", "JavaScript", "Express"],
-    codeUrl: "https://github.com",
-    liveUrl: "https://netlify.com",
-  },
-  {
-    title: "Project Three",
-    description:
-      "This is a detailed description for Project Three. It explains the features and functionality of the application, highlighting the technical challenges and how they were overcome.",
-    image: "https://via.placeholder.com/800x600",
-    tags: ["Python", "MongoDB", "Spring"],
-    codeUrl: "https://github.com",
-    liveUrl: "https://netlify.com",
-  }
-];
+import { projects } from "../projects";
 
 export default function ProjectsPage() {
   return (
