@@ -17,11 +17,25 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState('');
+  const [pastHero, setPastHero] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  useEffect(() => {
+    const hero = document.getElementById('hero');
+    if (!hero) return;
+    const heroObserver = new IntersectionObserver(
+      ([entry]) => {
+        setPastHero(!entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+    heroObserver.observe(hero);
+    return () => heroObserver.disconnect();
   }, []);
 
   useEffect(() => {
@@ -46,9 +60,31 @@ export default function Navbar() {
 
   const cvFile = `/cv/Diego_Remicio_CV_${locale.toUpperCase()}.pdf`;
 
+  // Scroll to hash on initial page load
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      // Small delay to ensure DOM is ready (ScrollReveal may affect layout)
+      const timer = setTimeout(() => {
+        document.getElementById(hash)?.scrollIntoView({
+          behavior: prefersReducedMotion() ? 'instant' : 'smooth',
+        });
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  // Update URL hash when active section changes via scroll
+  useEffect(() => {
+    if (active) {
+      window.history.replaceState(null, '', `#${active}`);
+    }
+  }, [active]);
+
   function handleNav(e: React.MouseEvent, id: string) {
     e.preventDefault();
     setOpen(false);
+    window.history.pushState(null, '', `#${id}`);
     document.getElementById(id)?.scrollIntoView({
       behavior: prefersReducedMotion() ? 'instant' : 'smooth',
     });
@@ -71,6 +107,7 @@ export default function Navbar() {
               behavior: prefersReducedMotion() ? 'instant' : 'smooth',
             });
             setActive('');
+            window.history.replaceState(null, '', window.location.pathname);
           }}
           className="font-mono text-sm font-bold text-[var(--foreground)] tracking-tight transition-colors hover:text-[var(--accent)]"
         >
@@ -103,11 +140,19 @@ export default function Navbar() {
             href={cvFile}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-xs text-[var(--accent)] border border-[var(--accent)] rounded px-3 py-1.5 transition-all duration-200 hover:bg-[var(--accent)]/10 hover:shadow-[0_0_12px_rgba(59,130,246,0.15)]"
+            className={`font-mono text-xs text-[var(--accent)] border border-[var(--accent)] rounded px-3 py-1.5 transition-all duration-300 hover:bg-[var(--accent)]/10 hover:shadow-[0_0_12px_rgba(59,130,246,0.15)] ${
+              pastHero
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 -translate-y-1 pointer-events-none'
+            }`}
           >
             {t('downloadCV')}
           </a>
-          <span className="text-[var(--border)]">|</span>
+          <span
+            className={`text-[var(--border)] transition-opacity duration-300 ${
+              pastHero ? 'opacity-100' : 'opacity-0'
+            }`}
+          >|</span>
           <LanguageSwitcher />
           <ThemeToggle />
         </div>
@@ -167,7 +212,11 @@ export default function Navbar() {
                 href={cvFile}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-mono text-xs text-[var(--accent)] border border-[var(--accent)] rounded px-3 py-1.5 transition-all duration-200 hover:bg-[var(--accent)]/10"
+                className={`font-mono text-xs text-[var(--accent)] border border-[var(--accent)] rounded px-3 py-1.5 transition-all duration-300 hover:bg-[var(--accent)]/10 ${
+                  pastHero
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 -translate-y-1 pointer-events-none'
+                }`}
               >
                 {t('downloadCV')}
               </a>

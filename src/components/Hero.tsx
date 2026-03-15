@@ -7,7 +7,7 @@ export default function Hero() {
   const cvFile = `/cv/Diego_Remicio_CV_${locale.toUpperCase()}.pdf`;
 
   return (
-    <section className="flex min-h-[calc(100vh-65px)] items-center px-6 py-20 sm:px-8">
+    <section id="hero" className="flex min-h-[calc(100vh-65px)] items-center px-6 py-20 sm:px-8">
       <div className="hero-stagger mx-auto w-full max-w-4xl">
         <h1 className="text-5xl font-bold tracking-tight text-[var(--foreground)] sm:text-7xl lg:text-8xl">
           {t('name')}
