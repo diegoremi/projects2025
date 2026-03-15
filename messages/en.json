@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "title": "Diego Remicio — Senior Angular/TypeScript Engineer",
+    "description": "Portfolio of Diego Remicio. 9+ years building enterprise web apps for United Airlines, JPMorgan, and WeightWatchers. Angular, TypeScript, React, Node.js."
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "downloadCV": "Download CV",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "name": "Diego Remicio",
+    "title": "Senior Angular/TypeScript Engineer",
+    "description": "9+ years building enterprise web apps for United Airlines, JPMorgan & WeightWatchers",
+    "location": "Based in Brazil (UTC\u22123) \u00b7 Peruvian National \u00b7 Open to relocation",
+    "availability": "Available for Contract & Full-time \u00b7 Remote or On-site \u00b7 US/EU timezone overlap",
+    "downloadCV": "Download CV",
+    "getInTouch": "Get in Touch",
+    "workAuthTitle": "Availability",
+    "workAuthText": "Based in Brazil (UTC\u22123) with full US/EU timezone overlap. Open to remote work globally and on-site relocation. Eligible for EU Highly Qualified Professional permits."
+  },
+  "about": {
+    "title": "About",
+    "p1": "I\u2019m a Senior Angular/TypeScript engineer with 9+ years building enterprise-grade web applications. I\u2019ve worked on pilot operations platforms at United Airlines, financial tools at JPMorgan, and CRM systems at WeightWatchers \u2014 always focused on authentication architecture (OAuth/OIDC), UI performance at scale, and shared component libraries that serve multi-team platforms.",
+    "p2": "I accelerate delivery through AI-augmented development (Claude Code, Cursor, Copilot) while maintaining the architectural judgment AI tools can\u2019t replace. My thesis project integrated LLM APIs into an educational platform with controlled prompts and A/B feature gating.",
+    "p3": "Currently based in S\u00e3o Paulo, Brazil. Trilingual: Spanish (native), English (advanced), Portuguese (professional)."
+  },
+  "experience": {
+    "title": "Experience",
+    "taller": {
+      "role": "Senior Angular Developer",
+      "company": "Taller Technologies \u2192 United Airlines",
+      "date": "Apr 2023 \u2013 Present",
+      "location": "Remote",
+      "bullet1": "Architected shared Angular component library across 3 platform modules for 7\u20139 engineers, eliminating duplicated UI code",
+      "bullet2": "Delivered Trip Trade UI with 28 filter criteria types and strict business rules by pilot type (Lineholder/RSV)",
+      "bullet3": "Implemented full OAuth/OIDC for Oracle Access Manager: auth service, guards, interceptor, silent renew",
+      "bullet4": "Improved UI responsiveness for 7+ page datasets using OnPush, lazy loading, caching, and virtual scroll",
+      "bullet5": "Reduced developer onboarding from ~7 to ~5 days via auto-published component docs"
+    },
+    "freelance": {
+      "role": "Frontend / Full Stack Engineer",
+      "company": "Freelance",
+      "date": "2024 \u2013 2025",
+      "location": "",
+      "bullet1": "C Gestiona \u2014 React + Vite marketing site with Markdown blog, Decap CMS, Netlify Functions",
+      "bullet2": "Clave de tu Ser \u2014 Next.js + Prisma + NextAuth platform; reservation CRUD admin; transactional emails (Resend)"
+    },
+    "oktana": {
+      "role": "Full Stack Developer",
+      "company": "Oktana \u2192 WeightWatchers",
+      "date": "Jun 2021 \u2013 Mar 2023",
+      "location": "Lima, Peru",
+      "bullet1": "Implemented end-to-end CRM features across Angular frontend and Node/Express services",
+      "bullet2": "Resolved intermittent subscription bug via RxJS retry strategy, reducing incidence to near-zero",
+      "bullet3": "Strengthened reliability through improved TypeScript/RxJS patterns and DB integrations"
+    },
+    "softvision": {
+      "role": "Front End Developer \u00b7 Pod Lead",
+      "company": "Softvision",
+      "date": "Aug 2019 \u2013 Aug 2020",
+      "location": "",
+      "bullet1": "Led FE pod, mentored 3 juniors. Shipped MVP state management with RxJS, introduced NgRx for KPI matrix"
+    },
+    "globant": {
+      "role": "Web UI Developer",
+      "company": "Globant \u2192 JPMorgan",
+      "date": "May 2018 \u2013 Aug 2019",
+      "location": "",
+      "bullet1": "Migrated financial calculator UIs (ActionScript \u2192 Angular) with pixel-accurate parity. >85% test coverage."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "authInfra": "Auth & Infrastructure",
+    "performance": "Performance",
+    "aiLlm": "AI & LLM"
+  },
+  "projects": {
+    "title": "Projects",
+    "featured": "Featured",
+    "freelanceWork": "Freelance Work",
+    "aiMath": {
+      "title": "AI Math Learning Platform",
+      "description": "Angular app integrating Claude/GPT APIs for adaptive math exercises with controlled LLM behavior. Feature-flagged AI for A/B study design \u2014 production-grade patterns including error handling, rate limiting, and response validation."
+    },
+    "cgestiona": {
+      "title": "C Gestiona",
+      "description": "React + Vite marketing site with Markdown blog, Decap CMS, and Netlify Functions."
+    },
+    "clave": {
+      "title": "Clave de tu Ser",
+      "description": "Next.js + Prisma reservation platform with NextAuth and transactional emails."
+    }
+  },
+  "contact": {
+    "title": "Let\u2019s work together.",
+    "email": "diego.remicio.dev@gmail.com"
+  },
+  "footer": {
+    "copyright": "\u00a9 2026 Diego Remicio \u00b7 Built with Next.js"
+  },
+  "theme": {
+    "light": "Switch to light mode",
+    "dark": "Switch to dark mode"
+  }
+}

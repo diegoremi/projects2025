@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "title": "Diego Remicio — Desenvolvedor Senior Angular/TypeScript",
+    "description": "Portf\u00f3lio de Diego Remicio. Mais de 9 anos desenvolvendo aplica\u00e7\u00f5es web empresariais para United Airlines, JPMorgan e WeightWatchers. Angular, TypeScript, React, Node.js."
+  },
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experi\u00eancia",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "downloadCV": "Baixar CV",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "hero": {
+    "name": "Diego Remicio",
+    "title": "Desenvolvedor Senior Angular/TypeScript",
+    "description": "Mais de 9 anos criando aplica\u00e7\u00f5es web empresariais para United Airlines, JPMorgan e WeightWatchers",
+    "location": "Baseado no Brasil (UTC\u22123) \u00b7 Nacional peruano \u00b7 Aberto a reloca\u00e7\u00e3o",
+    "availability": "Dispon\u00edvel para contrato e tempo integral \u00b7 Remoto ou presencial \u00b7 Sobreposi\u00e7\u00e3o de fuso US/EU",
+    "downloadCV": "Baixar CV",
+    "getInTouch": "Entrar em contato",
+    "workAuthTitle": "Disponibilidade",
+    "workAuthText": "Baseado em S\u00e3o Paulo, Brasil. Dispon\u00edvel para trabalho remoto global com sobreposi\u00e7\u00e3o de fuso hor\u00e1rio US/EU. Nacional peruano com documenta\u00e7\u00e3o regularizada no Brasil (CRNM)."
+  },
+  "about": {
+    "title": "Sobre",
+    "p1": "Sou um desenvolvedor Senior Angular/TypeScript com mais de 9 anos de experi\u00eancia em aplica\u00e7\u00f5es web de n\u00edvel empresarial. Trabalhei em plataformas de opera\u00e7\u00f5es de pilotos na United Airlines, ferramentas financeiras no JPMorgan e sistemas CRM no WeightWatchers \u2014 sempre focado em arquitetura de autentica\u00e7\u00e3o (OAuth/OIDC), performance de UI em escala e bibliotecas de componentes compartilhados para m\u00faltiplas equipes.",
+    "p2": "Acelero entregas atrav\u00e9s de desenvolvimento assistido por IA (Claude Code, Cursor, Copilot), mantendo o julgamento arquitet\u00f4nico que ferramentas de IA n\u00e3o conseguem substituir. Meu projeto de tese integrou APIs de LLM em uma plataforma educacional com prompts controlados e feature flags para testes A/B.",
+    "p3": "Atualmente baseado em S\u00e3o Paulo, Brasil. Trilingue: espanhol (nativo), ingl\u00eas (avan\u00e7ado), portugu\u00eas (profissional)."
+  },
+  "experience": {
+    "title": "Experi\u00eancia",
+    "taller": {
+      "role": "Desenvolvedor Angular Senior",
+      "company": "Taller Technologies \u2192 United Airlines",
+      "date": "Abr 2023 \u2013 Presente",
+      "location": "Remoto",
+      "bullet1": "Arquitetura de biblioteca de componentes Angular compartilhada entre 3 m\u00f3dulos de plataforma para 7\u20139 engenheiros, eliminando c\u00f3digo UI duplicado",
+      "bullet2": "Entrega da UI de Trip Trade com 28 tipos de crit\u00e9rios de filtro e regras de neg\u00f3cio rigorosas por tipo de piloto (Lineholder/RSV)",
+      "bullet3": "Implementa\u00e7\u00e3o completa de OAuth/OIDC para Oracle Access Manager: servi\u00e7o de auth, guards, interceptor, renova\u00e7\u00e3o silenciosa",
+      "bullet4": "Melhoria da responsividade da UI para datasets de 7+ p\u00e1ginas usando OnPush, lazy loading, cache e virtual scroll",
+      "bullet5": "Redu\u00e7\u00e3o do onboarding de desenvolvedores de ~7 para ~5 dias via documenta\u00e7\u00e3o de componentes auto-publicada"
+    },
+    "freelance": {
+      "role": "Desenvolvedor Frontend / Full Stack",
+      "company": "Freelance",
+      "date": "2024 \u2013 2025",
+      "location": "",
+      "bullet1": "C Gestiona \u2014 Site de marketing React + Vite com blog Markdown, Decap CMS, Netlify Functions",
+      "bullet2": "Clave de tu Ser \u2014 Plataforma Next.js + Prisma + NextAuth; admin CRUD de reservas; e-mails transacionais (Resend)"
+    },
+    "oktana": {
+      "role": "Desenvolvedor Full Stack",
+      "company": "Oktana \u2192 WeightWatchers",
+      "date": "Jun 2021 \u2013 Mar 2023",
+      "location": "Lima, Peru",
+      "bullet1": "Implementa\u00e7\u00e3o de funcionalidades CRM end-to-end no frontend Angular e servi\u00e7os Node/Express",
+      "bullet2": "Resolu\u00e7\u00e3o de bug intermitente de assinatura via estrat\u00e9gia de retry RxJS, reduzindo a incid\u00eancia a quase zero",
+      "bullet3": "Fortalecimento da confiabilidade atrav\u00e9s de padr\u00f5es aprimorados de TypeScript/RxJS e integra\u00e7\u00f5es de BD"
+    },
+    "softvision": {
+      "role": "Desenvolvedor Front End \u00b7 L\u00edder de Pod",
+      "company": "Softvision",
+      "date": "Ago 2019 \u2013 Ago 2020",
+      "location": "",
+      "bullet1": "Lideran\u00e7a de pod FE, mentoria de 3 juniors. Entrega de gerenciamento de estado MVP com RxJS, introdu\u00e7\u00e3o de NgRx para matriz de KPIs"
+    },
+    "globant": {
+      "role": "Desenvolvedor Web UI",
+      "company": "Globant \u2192 JPMorgan",
+      "date": "Mai 2018 \u2013 Ago 2019",
+      "location": "",
+      "bullet1": "Migra\u00e7\u00e3o de interfaces de calculadoras financeiras (ActionScript \u2192 Angular) com paridade pixel-perfect. >85% de cobertura de testes."
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "authInfra": "Auth e Infraestrutura",
+    "performance": "Performance",
+    "aiLlm": "IA e LLM"
+  },
+  "projects": {
+    "title": "Projetos",
+    "featured": "Destaque",
+    "freelanceWork": "Trabalho Freelance",
+    "aiMath": {
+      "title": "Plataforma de Aprendizado Matem\u00e1tico com IA",
+      "description": "Aplica\u00e7\u00e3o Angular integrando APIs da Claude/GPT para exerc\u00edcios matem\u00e1ticos adaptativos com comportamento LLM controlado. IA com feature flags para design de estudo A/B \u2014 padr\u00f5es de produ\u00e7\u00e3o incluindo tratamento de erros, rate limiting e valida\u00e7\u00e3o de respostas."
+    },
+    "cgestiona": {
+      "title": "C Gestiona",
+      "description": "Site de marketing React + Vite com blog Markdown, Decap CMS e Netlify Functions."
+    },
+    "clave": {
+      "title": "Clave de tu Ser",
+      "description": "Plataforma de reservas Next.js + Prisma com NextAuth e e-mails transacionais."
+    }
+  },
+  "contact": {
+    "title": "Vamos trabalhar juntos.",
+    "email": "diego.remicio.dev@gmail.com"
+  },
+  "footer": {
+    "copyright": "\u00a9 2026 Diego Remicio \u00b7 Feito com Next.js"
+  },
+  "theme": {
+    "light": "Mudar para modo claro",
+    "dark": "Mudar para modo escuro"
+  }
+}

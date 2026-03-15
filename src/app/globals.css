@@ -1,27 +1,47 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+/* ── Light theme (default) ── */
 :root {
-  --background: #0D0D0D;
-  --foreground: #FFFFFF;
-  --primary-color: #6366F1;
-  --primary-color-with-opacity: rgba(99, 102, 241, 0.75);
-  --secondary-color: #1F2937;
+  --background: #FAFAFA;
+  --foreground: #0F172A;
+  --muted: #64748B;
+  --accent: #1B4F72;
+  --accent-hover: #2980B9;
+  --accent-faint: #EBF5FB;
+  --pill-bg: #EBF5FB;
+  --pill-text: #1B4F72;
+  --border: #E2E8F0;
+  --card: #FFFFFF;
+}
+
+/* ── Dark theme ── */
+.dark {
+  --background: #0F172A;
+  --foreground: #E2E8F0;
+  --muted: #94A3B8;
+  --accent: #3B82F6;
+  --accent-hover: #60A5FA;
+  --accent-faint: #1E293B;
+  --pill-bg: #1E293B;
+  --pill-text: #93C5FD;
+  --border: #334155;
+  --card: #1E293B;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), sans-serif;
-}
-
-.form-input {
-    @apply block w-full rounded-lg border-0 bg-gray-800 px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[var(--primary-color)] sm:text-sm sm:leading-6 transition-all duration-300 ease-in-out;
-}
-.form-input:focus {
-    --tw-ring-color: var(--primary-color-with-opacity);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.form-label {
-    @apply block text-sm font-medium leading-6 text-gray-300;
+  font-family: var(--font-sans);
+  transition: background-color 0.2s, color 0.2s;
 }
